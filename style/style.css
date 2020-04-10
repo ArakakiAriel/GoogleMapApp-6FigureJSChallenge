@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh; /*VERY IMPORTANT, 100vh makes to get full windows no matter the size of it (100% viewport height)*/
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    position: absolute; /* se solapea en el mismo mapa*/
+    z-index: 100; /*adds a priority of layer*/
+    font-size: 70px;
+    top: 50px;
+    left: 100px;
+}
+.search-container {
+    position: absolute; /* se solapea en el mismo mapa*/
+    z-index: 100; /*adds a priority of layer*/
+    top: 130px;
+    left: 100px;
+    width: 350px;
+    height: 60px;
+    background-color: #454E53;
+    border-radius: 30px;
+    display: flex;
+}
+.search-container .search {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.search-container input { /* we can add all the same style to the inputs into search-container class*/
+    width: 100%;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.search-container input:focus { /* we can add all the same style to the inputs into search-container class*/
+    outline: none
+}
+.search i {
+    font-size: 25px;
+    color: white;
+}
+
+
+.store-list-container {
+    position: absolute; /* se solapea en el mismo mapa*/
+    z-index: 100; /*adds a priority of layer*/
+    top: 220px;
+    left: 100px;
+    width: 350px;
+    bottom: 20px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    padding-bottom: "30px";
+    overflow-y: hidden;
+
+}
+
+.store-list {
+    overflow-y: scroll;
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.store-address {
+    font: verdana;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #514C4C;
+ }
+ .store-phone-number {
+    font: verdana;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 5px;
+    color: #B5ADAD;
+ }
+ .store-container {
+     border-bottom: 1px solid #979797;
+     display: flex;
+ }
+
+.store-container-background {
+     display: flex;
+     flex-grow: 1;
+     margin-bottom: 12px;
+     margin-top: 12px;
+     padding-left: 8px;
+     padding-right: 8px;
+     border-radius: 18px;
+     transition: all 0.2s ease-in-out;
+}
+
+.store-container-background:hover{
+    background-color: #ccc;
+}
+
+ .store-address span {
+     display: block;
+ }
+
+ .store-number {
+     width: 30px;
+     height: 30px;
+     background-color: #454E53;
+     color: #B5ADAD;
+     border-radius: 50%;
+     font-size: 12px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .store-number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-info-container {
+    flex-grow: 1;
+}
+ 
+.marker-store {
+    border-bottom: 1px solid #979797;
+}
+
+.marker-store-name {
+    font-size: 17px;
+}
+
+.marker-store-status {
+    font-size: 12px;
+    color: #B5ADAD;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+.marker-store-info{
+    padding-top: 3px;
+    display: flex;
+}
+
+.location-icon{
+    width: 20px;
+    height: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 132, 178);
+    border-radius: 50%;
+}
+.phone-icon{
+    width: 20px;
+    height: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 132, 178);
+    border-radius: 50%;
+}
+
+
+.marker-info{
+    padding-top: 3px;
+}
+
+.marker-store-address{
+    padding-left: 3px;
+}
+.marker-store-phone{
+    padding-left: 3px;
+    padding-top: 4px;
+}
